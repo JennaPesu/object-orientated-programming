@@ -12,15 +12,14 @@ namespace Työntekijäluokka
 
             työntekijä1.CompareSalary(työntekijä2);
             työntekijä2.CompareSalary(työntekijä3);
-
-            työntekijä1.PrintEmployeeInfo();
-            työntekijä2.PrintEmployeeInfo();
-            työntekijä3.PrintEmployeeInfo();
-
             Employee[] employees = new Employee[3];
             employees[0] = työntekijä1;
             employees[1] = new Employee("Heikki", 456, "Kirjailija", 3456);
             employees[2] = työntekijä3;
+
+            for (int i = 0; i < employees.Length; i++)
+
+                employees[i].PrintEmployeeInfo();
 
             Console.ReadKey(); 
           
